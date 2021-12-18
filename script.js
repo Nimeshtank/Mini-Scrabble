@@ -3,8 +3,7 @@ var count = document.querySelector('#count');
 
 function keycount(){
 
-    var text = textarea.value;
-    var textcount = textarea.value.length;
+    var textcount = textarea.value.replace(/ /g, "").length;
     count.innerHTML = textcount;
 }
 
