@@ -10,10 +10,17 @@
 </head>
 
 <body>
+    <p>Live Character, Word Count</p>
+   
     <div class="container">
-        <h5> Live Character Count -</h5>
+       
         <textarea id="evaluatedText" placeholder="Your text here" onkeyup="keycount()"></textarea>
-        <h3 id="letterCount">Character Count : <span id="count">0</span></h3>
+
+        <div class="count">
+            <h3 id="letterCount">CHARACTERS <span id="tcount">0</span></h3>
+            <h3 id="wordCount">WORD <span id="wcount">0</span></h3>
+            <!-- <h3 id="sentance">SENTANCES <span id="scount">0</span></h3> -->
+        </div>
     </div>
     <script src="script.js"></script>
 </body>

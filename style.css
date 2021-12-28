@@ -3,37 +3,69 @@
     padding: 0;
 }
 
-#evaluatedText{
-    width: 300px;
-    height: 100px;
-    margin: 15px 0;
-    outline: none;
-    border: none;
-    font-size: 15px;
-}
-#count{
-    color: rgb(0, 102, 255);
-    font-size: 1.5em;
-
-}
-.container{
-
-    background-color: coral;
-    padding: 30px;
-    box-shadow: 0px 0px 10px 5px;
-}
-
 body{
     height: 100vh;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: bisque;
     background-size: cover;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
 
-h5{
-    font-size: 1em;
-    color: rgb(18, 3, 32);
+p{
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
 }
+
+#evaluatedText
+{
+    width: 100% ;
+    height: 80%;
+    font-size: 15px;
+    outline: none;
+}
+#tcount,#wcount{
+ 
+    color: white;
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+#wordCount, #letterCount{
+    margin-right: 2rem;
+    
+    color: rgb(245, 11, 11);
+    font-weight: 400;
+}
+
+
+.count{
+     display: flex;
+    justify-content: flex-start;
+}
+
+.container{
+    background-color: coral;
+    padding: 1rem;
+    box-shadow: 5px 5px;
+    border-radius: 10px;
+    width: 50%;
+    height: 40%;
+}
+@media screen and (max-width: 480px) {
+    
+    .count{
+       display: flex;
+       justify-content: flex-start;
+       flex-direction: column;
+   }
+
+   .container{
+        width: 80%;
+        height: 50%;
+    }
+
+}
+

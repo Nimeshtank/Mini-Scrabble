@@ -1,9 +1,20 @@
-var textarea = document.querySelector('#evaluatedText');
-var count = document.querySelector('#count');
+let textarea = document.querySelector('#evaluatedText');
+let tcount = document.querySelector('#tcount');
+let wcount = document.querySelector('#wcount');
+let scount = document.querySelector('#scount');
 
-function keycount(){
+function keycount() {
 
-    var textcount = textarea.value.replace(/ /g, "").length;
-    count.innerHTML = textcount;
+
+
+    let word = textarea.value.split(/\s+/).filter(e =>{return (e.length !== 0)} ).length
+
+     wcount.innerHTML = word;
+
+    let textcount = textarea.value.replace(/\s|\n/g, "").length;
+
+     tcount.innerHTML = textcount;
+
+  
 }
 
